@@ -45,9 +45,9 @@ local entityTable = Spawner.createEntity({
 
         true, -- czy trzesie sie kamera, 
 
-        {3.5, 20, 0.1, 1}, -- Shake values (don't change if you don't know)
+        {3.5, 20, 0.1, 1}, -- NIE ZMIENIAĆ 
 
-        100, -- Shake start distance (from Entity to you)
+        100, -- Z JAK DALEKA TRZESIE SIE EKRAN JAK NP RUSH LECI
 
     },
 
@@ -57,9 +57,9 @@ local entityTable = Spawner.createEntity({
 
         {
 
-            Image1 = "rbxassetid://10483855823", -- Image1 url
+            Image1 = "rbxassetid://10483855823", -- url obrazka
 
-            Image2 = "rbxassetid://10483999903", -- Image2 url
+            Image2 = "rbxassetid://10483999903", -- url obrazka
 
             Shake = true,
 
@@ -67,7 +67,7 @@ local entityTable = Spawner.createEntity({
 
                 10483790459, -- SoundId
 
-                { Volume = 0.5 }, -- Sound properties
+                { Volume = 0.5 }, -- JAK GLOSNY DŹWIĘK 
 
             },
 
@@ -75,13 +75,13 @@ local entityTable = Spawner.createEntity({
 
                 10483837590, -- SoundId
 
-                { Volume = 0.5 }, -- Sound properties
+                { Volume = 0.5 }, -- JAK GLOSNY DŹWIĘK
 
             },
 
             Flashing = {
 
-                true, -- Enabled/Disabled
+                true, -- CZY 
 
                 Color3.fromRGB(255, 255, 255), -- Color
 
@@ -89,7 +89,7 @@ local entityTable = Spawner.createEntity({
 
             Tease = {
 
-                true, -- Enabled/Disabled
+                true, -- ILE RAZY SIE PRZYBLIZA ( NP W JUMPSCARZE RUSHA ) true = tak, false = nie
 
                 Min = 1,
 
@@ -101,11 +101,11 @@ local entityTable = Spawner.createEntity({
 
     },
 
-    CustomDialog = {"You can", "put your", "custom death", "message here."}, -- Custom death message
+    CustomDialog = {"drapak", "tu", "był", "xd."}, -- WIADOMOSC JAK ZGINIESZ
 
 })
 
------[[  Debug -=- Advanced  ]]-----
+-----[[  Debug -=- Advanced  ]]----- -- NIC NIE ZMIENIAJ DO KONCA!!!!
 
 entityTable.Debug.OnEntitySpawned = function()
 
