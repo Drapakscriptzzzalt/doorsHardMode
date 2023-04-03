@@ -57,15 +57,15 @@ local entityTable = Spawner.createEntity({
 
         {
 
-            Image1 = "rbxassetid://10483855823", -- url obrazka
+            Image1 = "rbxassetid://10483855823", -- id obrazka
 
-            Image2 = "rbxassetid://10483999903", -- url obrazka
+            Image2 = "rbxassetid://10483999903", -- id obrazka
 
             Shake = true,
 
             Sound1 = {
 
-                10483790459, -- SoundId
+                10483790459, -- id dźwięku 
 
                 { Volume = 0.5 }, -- JAK GLOSNY DŹWIĘK 
 
@@ -73,7 +73,7 @@ local entityTable = Spawner.createEntity({
 
             Sound2 = {
 
-                10483837590, -- SoundId
+                10483837590, -- id dźwięku 
 
                 { Volume = 0.5 }, -- JAK GLOSNY DŹWIĘK
 
@@ -81,7 +81,7 @@ local entityTable = Spawner.createEntity({
 
             Flashing = {
 
-                true, -- CZY 
+                true, -- CZY MA SIE BLYSKAC true = tak, false = nie
 
                 Color3.fromRGB(255, 255, 255), -- Color
 
@@ -91,9 +91,9 @@ local entityTable = Spawner.createEntity({
 
                 true, -- ILE RAZY SIE PRZYBLIZA ( NP W JUMPSCARZE RUSHA ) true = tak, false = nie
 
-                Min = 1,
+                Min = 1, -- ile razy minimalnie sie przybliza
 
-                Max = 3,
+                Max = 3, -- ile razy maksymalnie sie przybliza
 
             },
 
