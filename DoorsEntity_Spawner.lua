@@ -1,49 +1,49 @@
 -- zrobione przez drapaka i przetłumaczone 
-local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))() -- nie zmieniac !!
 
 -- Stworz Entity
 
 local entityTable = Spawner.createEntity({
 
-    CustomName = "Template Entity", -- Custom name of your entity
+    CustomName = "TUTAJ NAZWA ENTITY", -- nazwa entity
 
-    Model = "https://github.com/RegularVynixu/Utilities/blob/main/Doors%20Entity%20Spawner/Models/Rush.rbxm?raw=true", -- Can be GitHub file or rbxassetid
+    Model = "https://github.com/RegularVynixu/Utilities/blob/main/Doors%20Entity%20Spawner/Models/Rush.rbxm?raw=true", -- ROBLOX ASSET ID (ID OBRAZKA)
 
-    Speed = 100, -- Percentage, 100 = default Rush speed
+    Speed = 100, -- PREDKOSC, 100 = PREDKOSC RUSHA
 
-    DelayTime = 2, -- Time before starting cycles (seconds)
+    DelayTime = 2, -- ile sekund zanim zacznie robic cykle
 
-    HeightOffset = 0,
+    HeightOffset = 0, -- NIE ZMIENIAC
 
-    CanKill = true,
+    CanKill = true, -- czy moze zabic, false = nie, true = tak
 
-    KillRange = 50,
+    KillRange = 50, -- z jak daleka zabija 50 = rush
 
-    BackwardsMovement = false,
+    BackwardsMovement = false, -- NIE ZMIENIAC
 
-    BreakLights = true,
+    BreakLights = true, -- czy niszczy swiatla
 
     FlickerLights = {
 
-        true, -- Enabled/Disabled
+        true, -- czy migaja swiatla, true = tak, false = nie
 
-        1, -- Time (seconds)
+        1, -- ile sekund migaja swiatla
 
     },
 
     Cycles = {
 
-        Min = 1,
+        Min = 1, -- ile cykli minimalnie
 
-        Max = 4,
+        Max = 4, -- ile cykli maksymalnie
 
-        WaitTime = 2,
+        WaitTime = 2, -- ile czekac zanim robi cykl
 
     },
 
     CamShake = {
 
-        true, -- Enabled/Disabled
+        true, -- czy trzesie sie kamera, 
 
         {3.5, 20, 0.1, 1}, -- Shake values (don't change if you don't know)
 
@@ -53,7 +53,7 @@ local entityTable = Spawner.createEntity({
 
     Jumpscare = {
 
-        true, -- Enabled/Disabled
+        true, -- czy jumpscare, true = tak , false = nie
 
         {
 
