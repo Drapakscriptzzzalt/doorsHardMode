@@ -1,4 +1,4 @@
--- zrobione przez drapaka i przetłumaczone 
+-- zrobione przez regularvynixus i wytlumaczone przez drapaka
 local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))() -- nie zmieniac !!
 
 -- Stworz Entity
